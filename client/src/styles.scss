@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.black-snackbar {
+    background: black !important;
+    color: white !important;
+}
+.green-snackbar {
+    background: #32CD32 !important;
+    color: white !important;
+}
+.cdk-overlay-pane {
+    margin:auto !important;
+}

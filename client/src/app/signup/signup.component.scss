@@ -1,0 +1,14 @@
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  mat-form-field {
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Set the direction to column */
+    width: 100%; /* Set the width to 100% to occupy the entire available width */
+  }
+  
+  mat-label {
+    position: initial; /* Ensure the label remains visible */
+  }
