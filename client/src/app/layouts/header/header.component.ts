@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit{
     if(!this.dialog.openDialogs.length){
       const dialogConfig = new MatDialogConfig();
       dialogConfig.width = '550px';
-      dialogConfig.panelClass = 'display:flex';
+      dialogConfig.panelClass = 'custom-dialog-container';
       this.dialog.open(SignupComponent, dialogConfig);
     }
   }

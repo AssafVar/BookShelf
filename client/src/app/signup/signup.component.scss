@@ -12,3 +12,7 @@
   mat-label {
     position: initial; /* Ensure the label remains visible */
   }
+  mat-dialog-actions {
+    display: flex;
+    justify-content:space-evenly;
+  }

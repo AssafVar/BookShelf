@@ -16,6 +16,7 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
+import { MatButtonModule } from '@angular/material/button';
 
 
 const ngxUiLoaderConfig:NgxUiLoaderConfig = {
@@ -53,6 +54,7 @@ const ngxUiLoaderConfig:NgxUiLoaderConfig = {
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
