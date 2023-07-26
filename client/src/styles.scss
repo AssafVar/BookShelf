@@ -5,6 +5,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'bootstrap/scss/bootstrap';
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
