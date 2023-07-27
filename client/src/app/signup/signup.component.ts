@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
       password: [null, [Validators.required]],
     });
   }
-  
+
   handleSubmit() {
     this.ngService.start();
     const formData = this.signupForm.value;
@@ -61,9 +61,7 @@ export class SignupComponent implements OnInit {
         }
         this.snackbarService.openSnackbar(this.responseMessage, GlobalContants.error);
       },
-
     })
 
   }
-
 }

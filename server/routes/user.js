@@ -29,7 +29,7 @@ router.post('/signup', (req, res)=>{
     })
 })
 router.post('/login', (req, res) => {
-   const {email, password} = req.body?.user;
+   const {email, password} = req.body;
    const query = 'select email, password, role, status from user where email= ?';
    connection.query(query,[email], (err,response)=>{
     if(!err){
