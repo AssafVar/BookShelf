@@ -55,6 +55,7 @@ const ngxUiLoaderConfig:NgxUiLoaderConfig = {
     MatInputModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
