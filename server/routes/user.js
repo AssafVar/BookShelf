@@ -3,7 +3,8 @@ import {connection} from '../connection.js';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 dotenv.config();
-
+import { authenticateToken} from '../services/authentication.js';
+import { checkRole } from '../services/checkRole'
 const router = express.Router();
 
 router.post('/signup', (req, res)=>{
