@@ -63,7 +63,7 @@ router.get('/get', authenticateToken, (req, res) => {
     });
 });
 
-router.get('/checkToken',(res, req)=>{
+router.get('/checkToken',authenticateToken, (res, req)=>{
     return res(200).json({message:"true"})
 });
 
