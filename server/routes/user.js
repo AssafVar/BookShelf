@@ -52,5 +52,14 @@ router.post('/login', (req, res) => {
    });
 });
 
-
+router.get('/user', (req, res) => {
+    const query = "SELECT id, name, contact_number, email, status FROM user where role='user'";
+    connection.query(query, (err,results)=>{
+        if (!err){
+            res.status(200).send(results);
+        }else{
+            res.status(500).json(err);
+        }
+    });
+});
 export default router;
