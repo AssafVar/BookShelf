@@ -62,4 +62,10 @@ router.get('/get', authenticateToken, (req, res) => {
         }
     });
 });
+
+router.get('/checkToken',(res, req)=>{
+    return res(200).json({message:"true"})
+});
+
+
 export default router;
