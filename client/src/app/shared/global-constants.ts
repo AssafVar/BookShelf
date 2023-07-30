@@ -2,7 +2,7 @@ export class GlobalContants {
     //message
 
     public static genericError: string = "Something went wrong. Please try again later.";
-
+    public static unuothorized: string = "You are not authorized to access this page.";
     //regex
 
     public static nameRegex: string = "[a-zA-Z0-9]*";
