@@ -25,5 +25,9 @@ export class UserService {
   }
 
   checkToken(){
-    return this.httpClient.get(this.url+'/user/checkToken')};
+    
+    return this.httpClient.get(this.url+'/user/checkToken',{
+      headers: new  HttpHeaders().set('Authorization', 'Bearer '+localStorage.getItem('token'))
+    });
+  };
 }

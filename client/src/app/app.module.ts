@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
 import { MatButtonModule } from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const ngxUiLoaderConfig:NgxUiLoaderConfig = {
@@ -41,6 +42,7 @@ const ngxUiLoaderConfig:NgxUiLoaderConfig = {
     FooterComponent,
     SignupComponent,
     LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

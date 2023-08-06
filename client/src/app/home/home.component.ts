@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     if (localStorage.getItem('token') != null) {
       this.userService.checkToken().subscribe({
         next: (response)=>{
-          this.router.navigate(['/']);
+          this.router.navigate(['/dashboard']);
         },
         error: (err)=>{
           console.error(err);

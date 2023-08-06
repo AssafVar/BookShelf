@@ -64,8 +64,8 @@ router.get('/get', authenticateToken, (req, res) => {
     });
 });
 
-router.get('/checkToken', authenticateToken, (res, req) => {
-    return res(200).json({ message: "true" })
+router.get('/checkToken', authenticateToken, (req, res) => {
+    return res.status(200).json({ message: "true" })
 });
 
 router.post('/changePassword', authenticateToken, (res, req) => {
